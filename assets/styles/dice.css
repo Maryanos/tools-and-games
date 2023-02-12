@@ -1,34 +1,3 @@
-html {
-    font-size: 62.5%;
-    line-height: 1.5;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    overflow-x: hidden!important;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-body {
-    color: var(--mainText);
-    background-color: var(--mainBg);
-    font-family: 'Montserrat', sans-serif;
-    width: 100%!important;
-    font-size: 1.7rem;
-    overflow-x: hidden!important;
-    height: 100%!important;
-}
-body.noscroll {
-    overflow: auto!important;
-    position: fixed;
-}
-p {
-    font-size: 1.7rem;
-    margin: 0;
-}
-a {
-    text-decoration: none;
-    pointer-events: all;
-}
 .dice-game h1 {
     font-size: 5rem;
     font-weight: 400;
