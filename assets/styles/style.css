@@ -34,7 +34,6 @@ body {
     width: 100%!important;
     font-size: 1.7rem;
     overflow-x: hidden!important;
-    height: 100%;
 }
 body.noscroll {
     overflow: auto!important;
