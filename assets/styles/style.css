@@ -1,0 +1,55 @@
+:root {
+    /* BMI */
+    --mainText: #fff;
+    --mainBg: #232432;
+    --textRed: #d8c4c4;
+    --pastelRed: #ff8080;
+    --btnActive: #dd66cf;
+
+    /* Dice Roll Game */
+    --mainText: #fff;
+    --mainBg: #232432;
+    --textRed: #d8c4c4;
+    --pasterRed: #ff8080;
+    --btnActive: #dd66cf;
+    --diceGreen: #8bcf7a;
+    --diceRed: #ff8080;
+}
+
+/* Globals */
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden!important;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    color: var(--mainText);
+    background-color: var(--mainBg);
+    font-family: 'Montserrat', sans-serif;
+    width: 100%!important;
+    font-size: 1.7rem;
+    overflow-x: hidden!important;
+    height: 100%;
+}
+body.noscroll {
+    overflow: auto!important;
+    position: fixed;
+}
+p {
+    font-size: 1.7rem;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    pointer-events: all;
+}
+
+/* Utility Classes */
+.hide {
+    display: none!important;
+}
