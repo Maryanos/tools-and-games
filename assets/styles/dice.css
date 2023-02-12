@@ -1,0 +1,216 @@
+:root {
+    --mainText: #fff;
+    --mainBg: #232432;
+    --textRed: #d8c4c4;
+    --pasterRed: #ff8080;
+    --btnActive: #dd66cf;
+    --diceGreen: #8bcf7a;
+    --diceRed: #ff8080;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden!important;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    color: var(--mainText);
+    background-color: var(--mainBg);
+    font-family: 'Montserrat', sans-serif;
+    width: 100%!important;
+    font-size: 1.7rem;
+    overflow-x: hidden!important;
+    height: 100%!important;
+}
+body.noscroll {
+    overflow: auto!important;
+    position: fixed;
+}
+p {
+    font-size: 1.7rem;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    pointer-events: all;
+}
+h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    line-height: 1.2;
+    margin: 1rem;
+}
+.wrapper {
+    padding: 2.5rem;
+}
+.dice-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dice-game .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dice-game h2 {
+    font-size: 30px;
+    color: var(--mainText);
+    font-weight: 400;
+}
+.dice-game .title p {
+    color: var(--textRed);
+    margin: 3rem 0 1.5rem 0;
+    font-size: 1.7rem;
+    text-align: center;
+}
+.labels {
+    display: flex;
+    justify-content: space-around;
+}
+.labels p {
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 1rem;
+}
+.board {
+    margin-top: 3rem;
+}
+.board .dices {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    justify-content: center;
+}
+.board .dices img {
+    max-height: 130px;
+}
+.board .btn-set {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.btn-set .btn-submit {
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    background: var(--pasterRed);
+    border: none;
+    color: var(--mainText);
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    min-width: 120px;
+}
+.btn-set .btn-submit:hover {
+    transform: translatey(5px);
+    color: var(--mainText);
+    background-color: var(--btnActive);
+}
+.btn-set .btn-refresh {
+    color: var(--mainText);
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    background: rgba(66, 66, 66, 0);
+    color: var(--mainText);
+    font-size: 1.8rem;
+    cursor: pointer;
+    border: solid 1px var(--mainText);
+    min-width: 130px;
+    transition: .3s ease-in-out;
+}
+.btn-set .btn-refresh:hover {
+    color: var(--mainText);
+    background-color: var(--btnActive);
+    border: solid 1px transparent;
+    transform: translateY(5px);
+}
+.btn-set .btn-refresh i {
+    transition: .3s ease-in-out;
+}
+.btn-set .btn-refresh:hover i {
+    transform: rotate(180deg);
+}
+.board .messages {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.messages .result {
+    font-size: 5rem;
+    font-weight: 300;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+.messages .description {
+    margin-top: -2rem;
+    color: #c8c8c8;
+    text-align: center;
+
+}
+.text-accent-red {
+    color: var(--diceRed);
+}
+.text-accent-green {
+    color: var(--diceGreen);
+}
+.dice-game .links {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dice-game .links a {
+    color: var(--mainText);
+    border: 1px solid var(--mainText);
+    border-radius: 1rem;
+    padding: .8rem 2rem;
+    margin: 2rem 0 5rem 0;
+    transition: .3s ease-in-out;
+}
+.dice-game .links a:hover {
+    transform: translateY(5px);
+    background-color: var(--btnActive);
+    border: 1px solid transparent;
+}
+
+@media (min-width: 767px) {
+    h1 {
+        font-size: 6rem;
+        line-height: 1.2;
+    }
+    .wrapper {
+        max-width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .board .dices img {
+        max-height: 170px;
+    }
+    .board .btn-set {
+        gap: 1.5rem;
+    }
+    .btn-set .btn-submit {
+        padding: 1.5rem 3rem;
+        font-size: 1.5rem;
+    }
+    .btn-set .btn-refresh {
+        padding: 1.5rem 3rem;
+        font-size: 1.5rem;
+    }
+    .board .labels p {
+        font-size: 3rem;
+    }
+    .messages .result {
+        font-size: 6rem;
+        font-weight: 300;
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+    }
+}

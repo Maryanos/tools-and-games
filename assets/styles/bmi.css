@@ -1,0 +1,230 @@
+:root {
+    --mainText: #fff;
+    --mainBg: #232432;
+    --textRed: #d8c4c4;
+    --pastelRed: #ff8080;
+    --btnActive: #dd66cf;
+}
+
+/* Globals */
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden!important;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    color: var(--mainText);
+    background-color: var(--mainBg);
+    font-family: 'Montserrat', sans-serif;
+    width: 100%!important;
+    font-size: 1.7rem;
+    overflow-x: hidden!important;
+    height: 100%;
+}
+body.noscroll {
+    overflow: auto!important;
+    position: fixed;
+}
+h1 {
+    font-size: 4rem;
+    color: var(--mainText);
+    font-weight: 600;
+    margin: 0;
+}
+h3 {
+    font-weight: 500;
+    font-size: 2.2rem;
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+}
+p {
+    font-size: 1.7rem;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    pointer-events: all;
+}
+
+
+/* Utility Classes */
+.hide {
+    display: none!important;
+}
+
+
+/* Content Css */
+.wrapper {
+    max-width: 600px;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2.5rem;
+}
+.title p {
+    color: var(--textRed);
+    margin-bottom: 4rem;
+    font-size: 1.7rem;
+}
+.bmi {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bmi .form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    min-width: 50px;
+}
+.form .metric-input {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.form .metric-input input {
+    min-width: 200px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+}
+.form .imperial-input {
+    display: flex;
+    flex-direction: column;
+}
+.form .imperial-input .weight {
+    padding-bottom: 2rem;
+}
+.form .imperial-input input {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.btn-set {
+    display: flex;
+    gap: 1rem;
+}
+.btn-submit {
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+    background: var(--pastelRed);
+    border: none;
+    color: var(--mainText);
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.btn-submit:hover {
+    transform: translatey(5px);
+    color: var(--mainText);
+    background-color: var(--btnActive);
+}
+
+.btn-refresh {
+    font-size: 2rem;
+    color: var(--mainText);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    background: rgba(66, 66, 66, 0);
+    color: var(--mainText);
+    font-size: 1.8rem;
+    cursor: pointer;
+    border: solid 1px var(--mainText);
+    min-width: 50px;
+    transition: .3s ease-in-out;
+}
+.btn-refresh:hover {
+    color: var(--mainText);
+    background-color: var(--btnActive);
+    border: solid 1px transparent;
+    transform: translateY(5px);
+}
+.btn-refresh i {
+    transition: .3s ease-in-out;
+}
+.btn-refresh:hover i {
+    transform: rotate(180deg);
+}
+.imperial-switch,
+.metric-switch {
+    font-size: 2rem;
+    color: var(--mainText);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    background: transparent;
+    color: var(--mainText);
+    font-size: 1.8rem;
+    cursor: pointer;
+    border: solid 1px var(--mainText);
+    min-width: 50px;
+    transition: .3s ease-in-out;
+    font-weight: 300;
+}
+.imperial-switch:hover,
+.metric-switch:hover {
+    color: var(--mainText);
+    background-color: var(--btnActive);
+    border: solid 1px transparent;
+}
+
+.result {
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+.description {
+    margin-top: -2rem;
+    color: var(--textRed);
+}
+.bmi-result {
+    font-weight: 500;
+    font-size: 4rem;
+    color: var(--pastelRed);
+}
+.danger {
+    color: var(--pastelRed);
+}
+
+.copy {
+    margin-top: 3rem;
+    color: var(--textRed);
+}
+.links {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.links a {
+    color: var(--mainText);
+    border: 1px solid var(--mainText);
+    border-radius: 1rem;
+    padding: .8rem 2rem;
+    margin: 2rem 0 5rem 0;
+    transition: .3s ease-in-out;
+}
+.links a:hover {
+    transform: translateY(5px);
+    background-color: var(--btnActive);
+    border: 1px solid transparent;
+}
+
+
+
+@media (min-width: 767px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    .imperial-input .height input:last-child,
+    .imperial-input .weight input:last-child {
+        margin-left: 1rem;
+    }
+}

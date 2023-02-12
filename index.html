@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/fc3975c880.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <title>Dice Game</title>
+        <link rel="stylesheet" href="assets/styles/dice.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="dice-game">
+                <div class="title">
+                    <h1>Dice Roll Game</h1>
+                    <p>Welcome to the Dice Game.<br>The rules are simple, just press the button 'Roll the Dice' to begin!</p>
+                </div>
+                <div class="board">
+                    <div class="labels">
+                        <p>Player 1</p>
+                        <p>Player 2</p>
+                    </div>
+                    <div class="dices">
+                        <img src="assets/images/dice/p1/dice-6.png" alt="" class="dice-1" id="dice-1" data-aos="zoom-in-right">
+                        <img src="assets/images/dice/p2/dice-6.png" alt="" class="dice-2" id="dice-2" data-aos="zoom-in-left">
+                    </div>
+                    <div class="btn-set">
+                        <button type="button" id="btn-submit" class="btn-submit" >Roll the Dice</button>
+                        <button id="btn-refresh" class="btn-refresh">Refresh <i class="fa-light fa-arrows-rotate"></i></button>
+                    </div>
+                    <div class="messages">
+                        <p id="result" class="result"></p>
+                        <p id="description" class="description"></p>
+                    </div>
+                </div>
+                <div class="links">
+                    <p>Other tools and games:</p>
+                    <a href="bmi-calculator.html">BMI Calculator</a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="assets/scripts/Dice.js" charset="utf-8"></script>
+    <script>AOS.init({duration: 1400});</script>
+    </div>
+</html>

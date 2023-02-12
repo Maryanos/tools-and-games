@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900' rel='stylesheet' type='text/css'>
+        <script src="https://kit.fontawesome.com/fc3975c880.js" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <title>BMI Calculator</title>
+        <link rel="stylesheet" href="assets/styles/bmi.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="bmi">
+                <div class="title">
+                    <h1>BMI Calculator</h1>
+                    <p>Welcome to the BMI calculator. Although it is a simple tool, it has the function of alerting the patient when dangerous underweight or overweight level is detected.</p>
+                </div>
+                <div class="form">
+                    <button id="imperial-switch" class="imperial-switch hide" >Switch to Imperial</button>
+                    <button id="metric-switch" class="metric-switch">Switch to Metric</button>
+                    <div id="imperial-input" class="imperial-input">
+                        <div class="weight">
+                            <h3>Weight</h3>
+                            <input type="text" name="height" id="stone" placeholder="Stones">
+                            <input type="text" name="height" id="pound" placeholder="Pounds">
+                        </div>
+                        <div class="height">
+                            <h3>Height</h3>
+                            <input type="text" name="weight" id="feet" placeholder="Feets">
+                            <input type="text" name="weight" id="inch" placeholder="Inches">
+                        </div>
+                    </div>
+                    <div id="metric-input" class="metric-input hide">
+                        <div>
+                            <h3>Weight</h3>
+                            <input type="text" name="weight" id="kg" placeholder="Type your weight in kg">
+                        </div>
+                        <div>
+                            <h3>Height</h3>
+                            <input type="text" name="height" id="cm" placeholder="Type your height in cm">
+                        </div>
+                    </div>
+                    <div class="btn-set">
+                        <button type="button" id="btn-submit" class="btn-submit" >Calculate</button>
+                        <button id="btn-refresh" class="btn-refresh"><i class="fa-light fa-arrows-rotate"></i></button>
+                    </div>
+                    <p id="result" class="result"></p>
+                    <p id="description" class="description"></p>
+                </div>
+            </div>
+            <div class="copy">
+                <h3>BMI ranges</h3>
+                <p>Your BMI will fit into one of 5 bands:</p>
+                <ul>
+                    <li>under 18.5 - This is described as underweight. </li>
+                    <li>between 18.5 and 24.9 - This is described as the 'healthy range.</li>
+                    <li>between 25 and 29.9 - This is described as overweight</li>
+                    <li>between 30 and 39.9 - This is described as obesity</li>
+                    <li>40 or over - This is described as severe obesity</li>
+                </ul>
+            </div>
+            <div class="links">
+                <p>Other tools and games:</p>
+                <a href="index.html">Dice Roll Game</a>
+            </div>
+        </div>
+    </body>
+    <script src="assets/scripts/Bmi.js" charset="utf-8"></script>
+</html>
+
+
+
+
