@@ -10,8 +10,8 @@ document.getElementById("btn-submit").addEventListener("click", function() {
     let bmi = weightKg / (heightCm / 100) ** 2 || stonePoundToKg / (feetInchToCm / 100) ** 2;
     let bmiRouded = bmi.toFixed(1);
 
-    if (isNaN(bmi)) {
-        document.getElementById("description").innerHTML = "<span class='danger'>Please enter something!</span>";
+    if (isNaN(bmi) || !isFinite(bmi)) {
+        document.getElementById("description").innerHTML = "<span class='danger'>Incorrect Entry! Please correct your input.</span>";
     }
     else {
         if (bmi < 18.5) {
@@ -64,4 +64,7 @@ document.getElementById("imperial-switch").addEventListener("click", function() 
 document.getElementById("btn-refresh").addEventListener("click", function() {
     location.reload();
 })
+
+
+
 
